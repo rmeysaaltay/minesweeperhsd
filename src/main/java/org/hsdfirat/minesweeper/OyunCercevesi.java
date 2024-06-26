@@ -56,13 +56,12 @@ public class OyunCercevesi extends JFrame {
     void puanlariEkle() {
         for (int i = 0; i < YUKSEKLIK; i++) {
             for (int j = 0; j < GENISLIK; j++) {
-                int puan = cevreKontrol(hsDbutons[i][j], i, j);
-                hsDbutons[i][j].point = puan;
+                hsDbutons[i][j].point = cevreKontrol(i, j);
             }
         }
     }
 
-    int cevreKontrol(HSDButton merkezButon, int x, int y) {
+    int cevreKontrol(int x, int y) {
         int baslangic_x = Math.max(x - 1, 0);
         int baslangic_y = Math.max(y - 1, 0);
         int bitis_x = Math.min(x+1, GENISLIK-1);

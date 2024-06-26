@@ -16,8 +16,8 @@ public class HSDButton extends JButton {
         setBackground(Color.pink);
     }
 
-    public HSDButton() {
-    }
+  /*  public HSDButton() {
+    }*/
 
     public boolean isMine(){
         return mine;
